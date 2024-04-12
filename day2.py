@@ -1,65 +1,74 @@
-# Description: This file is for the second day of the python workshop
+# # Description: This file is for the second day of the python workshop
 
 
-# create variables for the following :
-# 1. age
-age = 17
-# 2. name
-name ="Stephanie"
-# 3. song
-song = "Liar"
-# 4. food
-food = "Bananas"
-# 5. number
-number = 40 
-priceOfMovie = 10.99
+# # create variables for the following :
+# # 1. age
+# age = 17
+# # 2. name
+# name ="Stephanie"
+# # 3. song
+# song = "Liar"
+# # 4. food
+# food = "Bananas"
+# # 5. number
+# number = 40 
+# priceOfMovie = 10.99
 
-# #now include the variables you just made print in the following...
-print(f'''Once upon a time, there was a {age} old coder named {name}. {name} liked to hum the song {song} while coding. It was so annoying that their teammates would throw {food} until {name} would stop singing. Still, {name} was the best coder on the team and could write {number} lines of code every day. Maybe {song}  was {name}’s secret power? No one will ever know.''')
-
-
-#f string interpolatiojn is a way to format string in python
-#It allows you to use variables inside of strings. 
-# What is syntax ? 
-#A way of writing
-#What is an algorithm?
-
-# what is a variable? What is a string?
-#Holds data
-#name = "john" #string this is defined
-# age = is undefined because it has no value
-# strings are nothing but plain text
-# what does this do?
-print("Giraffe \n academy")
-#\n makes a new line 
-print("Giraffe \t academy")
-#/t makes a tab
-
-# or this
-phrase = "python learning"
-print(phrase + "is cool")
-#this is called concatenation or string interpolation 
-#what does the + sign do? What is it called?
+# # #now include the variables you just made print in the following...
+# print(f'''Once upon a time, there was a {age} old coder named {name}. {name} liked to hum the song {song} while coding. It was so annoying that their teammates would throw {food} until {name} would stop singing. Still, {name} was the best coder on the team and could write {number} lines of code every day. Maybe {song}  was {name}’s secret power? No one will ever know.''')
 
 
-#what if I wanted to get the length of a phrase?
-phrase = str(phrase)
-print(f'the length of the phrase" + len{phrase}')
-declarationOfInDependance = "When, in the course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume, among the powers of the earth, the separate and equal station to which the laws of nature and of nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation."
-declarationOfInDependance = str(declarationOfInDependance)
-#find the length of the decleration of independance
-print(f'the length of the declaration of independance is {len(declarationOfInDependance)}')
-#len allows you to find the length of a string
-#what if I wanted to make the letters in the variable upper case or lower?
+# #f string interpolatiojn is a way to format string in python
+# #It allows you to use variables inside of strings. 
+# # What is syntax ? 
+# #A way of writing
+# #What is an algorithm?
 
+# # what is a variable? What is a string?
+# #Holds data
+# #name = "john" #string this is defined
+# # age = is undefined because it has no value
+# # strings are nothing but plain text
+# # what does this do?
+# print("Giraffe \n academy")
+# #\n makes a new line 
+# print("Giraffe \t academy")
+# #/t makes a tab
+
+# # or this
+# phrase = "python learning"
+# print(phrase + "is cool")
+# #this is called concatenation or string interpolation 
+# #what does the + sign do? What is it called?
+
+
+# #what if I wanted to get the length of a phrase?
+# phrase = str(phrase)
+# print(f'the length of the phrase" + len{phrase}')
+# declarationOfInDependance = "When, in the course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume, among the powers of the earth, the separate and equal station to which the laws of nature and of nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation."
+# declarationOfInDependance = str(declarationOfInDependance)
+# #find the length of the decleration of independance
+# print(f'the length of the declaration of independance is {len(declarationOfInDependance)}')
+# #len allows you to find the length of a string
+# #what if I wanted to make the letters in the variable upper case or lower?
+new_phrase = "welcome to do day 2 part 3 "
+print(len(new_phrase))
+print(new_phrase.upper())
+# .upper is a method that makes the string all upper case
+# parentheses are used to call methods
+print(new_phrase.lower())
+# .lower is a method that makes the string all lower case 
 
 
 
 #what if I wanted to check and see if the phrase was all lower or upper?
-
+print(new_phrase.islower()) #returns a bpplean true or false
 
 #What if I wanted to get one letter of the phrase
-
+print(new_phrase[0]) #prints the first letter
+print(new_phrase[1])#prints the second letter
+print(new_phrase[11]) #prints the fourth letter
+print(new_phrase[-1]) #prints the last letter of the phrase 
 
 # The names you use when creating these labels need to follow a few rules:
 # 1. Names can not start with a number.
@@ -79,21 +88,21 @@ print(f'the length of the declaration of independance is {len(declarationOfInDep
 
 
 # Addition
-
+print(2+2)
 # Subtraction
-
+print(2 - 5)
 # Multiplication
-
+print(2 * 3)
 # Division
-
+print(10/2)
 # Modulus
-
+print(10% 3) # 10 divded by 3 is 3 with a remainder of 1
 # Exponentiation
-
+print(2 ** 3) # 2 to the power of 3 
 # Floor Division
-
+print(10 // 3) # 10 divded by 3 is a remainder of 1
 # Order of Operations followed in Python
-
+print( 2 * 3 +1) #7 
 # You can use parentheses to specify the order in which you want operations to be performed.
 
 #to do more you need to import special math libraries from python
